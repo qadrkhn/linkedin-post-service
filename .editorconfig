@@ -1,0 +1,53 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = lf
+charset = utf-8
+
+# Python-specific settings
+[*.py]
+max_line_length = 88
+
+# HTML files
+[*.html]
+indent_size = 2
+
+# JSON files
+[*.json]
+indent_size = 2
+insert_final_newline = true  # Keeping it consistent is a better practice
+
+# Ignore indentation rules for JavaScript in vendor directories
+[**/admin/js/vendor/**]
+indent_style = ignore
+indent_size = ignore
+
+# Ignore changes for minified JavaScript files
+[**.min.js]
+indent_style = ignore
+insert_final_newline = ignore
+
+# Makefile uses tabs
+[Makefile]
+indent_style = tab
+
+# Batch files use tabs
+[*.bat]
+indent_style = tab
+
+# Documentation files in the docs folder
+[docs/**.txt]
+max_line_length = 79
+
+# YAML files
+[*.yml]
+indent_style = space
+indent_size = 2
+
+# Optional: Markdown files, no line length restriction
+[*.md]
+max_line_length = off

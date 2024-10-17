@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+.docker
+
+# Vscode
+.vscode/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+app/__pycache__
+app/*/__pycache__
+app/*/*/__pycache__
+app/*/*/*/__pycache__
+app/*/*/*/*/__pycache__
+app/*/*/*/*/*/__pycache__
+
+env/
+venv/
+
