@@ -47,7 +47,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "linkedin_poster_service.urls"
+ROOT_URLCONF = "linkedin_post_service.urls"
 
 TEMPLATES = [
     {
@@ -65,7 +65,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "linkedin_poster_service.wsgi.application"
+WSGI_APPLICATION = "linkedin_post_service.wsgi.application"
 
 
 USE_SQLITE = env('USE_SQLITE')
